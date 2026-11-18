@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo e portfólio de Nicolas B. Valadão.">
+  <title>Nicolas B. Valadão | Currículo</title>
+  <style>
+    :root {
+      --azul: #414256;
+      --azul-claro: #62657d;
+      --fundo: #f5f6fa;
+      --texto: #30313d;
+      --muted: #686a78;
+      --branco: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background: var(--fundo);
+      line-height: 1.65;
+    }
+    header {
+      background: var(--azul);
+      color: white;
+      padding: 52px 24px 58px;
+    }
+    .hero {
+      max-width: 1050px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+    }
+    .hero-text { text-align: right; }
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      line-height: 1.1;
+      letter-spacing: -.04em;
+    }
+    .hero p { margin: 5px 0; color: #e6e6ed; }
+    .profile {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid rgba(255,255,255,.14);
+      flex-shrink: 0;
+    }
+    .placeholder {
+      display: grid;
+      place-items: center;
+      background: var(--azul-claro);
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid #e6e7ed;
+      backdrop-filter: blur(8px);
+    }
+    nav ul {
+      max-width: 1050px;
+      margin: auto;
+      padding: 0 20px;
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--azul);
+      text-decoration: none;
+      font-size: .92rem;
+      font-weight: 700;
+    }
+    nav a:hover { color: #8589a5; }
+    main { max-width: 1050px; margin: auto; padding: 38px 24px 70px; }
+    section {
+      background: var(--branco);
+      border-radius: 14px;
+      padding: 30px;
+      margin: 22px 0;
+      box-shadow: 0 5px 22px rgba(38,40,60,.045);
+      scroll-margin-top: 76px;
+    }
+    h2 {
+      color: var(--azul);
+      margin: 0 0 18px;
+      font-size: 1.55rem;
+    }
+    h3 { color: var(--azul-claro); margin: 0 0 8px; font-size: 1.08rem; }
+    .about { text-align: center; padding: 38px 50px; }
+    .about p { max-width: 780px; margin: auto; color: var(--muted); font-size: 1.05rem; }
+    .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .columns section { margin: 0; }
+    ul.clean { padding-left: 20px; margin: 8px 0 0; }
+    li { margin: 5px 0; }
+    .contact-link { color: inherit; text-decoration: none; }
+    .contact-link:hover { text-decoration: underline; }
+    .tag {
+      display: inline-block;
+      background: #eef0f6;
+      color: var(--azul);
+      border-radius: 30px;
+      padding: 5px 12px;
+      margin: 4px 4px 4px 0;
+      font-size: .9rem;
+    }
+    footer {
+      background: var(--azul);
+      color: #e6e6ed;
+      text-align: center;
+      padding: 22px;
+      font-size: .9rem;
+    }
+    @media (max-width: 680px) {
+      header { padding: 36px 20px; }
+      .hero { flex-direction: column; text-align: center; gap: 18px; }
+      .hero-text { text-align: center; }
+      .profile { width: 155px; height: 155px; }
+      nav ul { gap: 12px 18px; padding: 12px; }
+      main { padding: 20px 14px 45px; }
+      section { padding: 23px 20px; }
+      .about { padding: 28px 22px; }
+      .columns { grid-template-columns: 1fr; }
+    }
+  </style>
+
+<style>a:hover, button:hover, [role="button"]:hover { cursor: url("miranha.png"), pointer; }</style>
+</head>
+<body>
+  <header id="inicio">
+    <div class="hero">
+      <img class="profile" src="foto-perfil.png" alt="Foto de perfil de Nicolas B. Valadão">
+      <div class="hero-text">
+        <h1>Nicolas B. Valadão</h1>
+        <p>Celular: <a class="contact-link" href="tel:+5511960624154">(11) 96062-4154</a></p>
+        <p>E-mail: <a class="contact-link" href="mailto:nicolasberbelherivaladao@gmail.com">nicolasberbelherivaladao@gmail.com</a></p>
+        <p>R. Hilario Ferrari, 700</p>
+        <p>Salto — São Paulo</p>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Navegação principal">
+    <ul>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#objetivo">Objetivo</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#referencias">Referências</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="about" id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Estudante de Técnico em Informática há 3 anos, com experiência prática em hardware e lógica de programação (Python, Java e bases de dados). Focado em criar soluções eficientes e funcionais.</p>
+    </section>
+
+    <div class="columns">
+      <div>
+        <section id="objetivo">
+          <h2>Objetivo</h2>
+          <p>Buscar oportunidades de desenvolvimento na área de Técnico em Informática, aplicando conhecimentos em programação e suporte.</p>
+        </section>
+        <section id="formacao">
+          <h2>Escolaridade</h2>
+          <ul class="clean">
+            <li>Atualmente cursando no Instituto Federal de Salto, São Paulo.</li>
+          </ul>
+        </section>
+      </div>
+      <div>
+        <section id="cursos">
+          <h2>Cursos</h2>
+          <ul class="clean">
+            <li>Tec. Informática para Internet</li>
+          </ul>
+        </section>
+        <section id="habilidades">
+          <h2>Habilidades e interesses</h2>
+          <ul class="clean">
+            <li>Inglês médio</li>
+            <li>Espanhol básico</li>
+            <li>Italiano básico</li>
+            <li>Amador em sistemas e lógica de programação.</li>
+            <li>Proativo no desenvolvimento de pequenos projetos e automações pessoais.</li>
+          </ul>
+          <p style="margin-top:18px">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">Hardware</span>
+            <span class="tag">Bases de dados</span>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <section id="referencias">
+      <h2>Referências</h2>
+      <h3>Instituto Federal de São Paulo — Salto</h3>
+      <p>Celular: (11) 4602-9191<br>
+      WhatsApp: (11) 98614-0661 ou (11) 98614-0227<br>
+      E-mail: <a class="contact-link" href="mailto:nicolasberbelherivaladao@gmail.com">nicolasberbelherivaladao@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nicolas B. Valadão</p>
+  </footer>
+<p style="text-align:center;padding:24px"><a href="index.html">← Voltar ao site principal</a></p>
+<p style="text-align:center"><a href="curriculo.pdf" target="_blank">Abrir currículo em PDF</a></p>
+</body>
+</html>
